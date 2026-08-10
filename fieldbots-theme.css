@@ -95,3 +95,20 @@ nav a[href*="fieldbots.com"]:hover { background: #1e3f9e; color: #ffffff !import
 .up, .operational, .status-up { color: #1a7f37; }
 .degraded { color: #b38600; }
 .down, .status-down { color: var(--fb-red); }
+
+/* "Up"/"Down" status tag next to the page title — proper pill label, not floating text */
+.tag {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-family: "Rubik", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  margin-left: 0.5rem;
+}
+.tag.up { background: #e6f4ea; color: #1a7f37; border: 1px solid #b7e0c3; }
+.tag.down { background: #fdecea; color: var(--fb-red); border: 1px solid #f5c6c2; }
+.tag.degraded { background: #fdf3e0; color: #b38600; border: 1px solid #f0dcb0; }
