@@ -33,6 +33,8 @@ status-website:
   navbar:
     - title: Website
       href: https://fieldbots.com
-  # Sub-page Chart.js graphs are teal by default and can't be recolored via CSS or
-  # config. Recolor the canvas pixels: teal (#1abc9c fill #89e0cf) -> FieldBots blue.
-  js: "(function(){var TR=26,TG=188,TC=156,BR=41,BG=83,BB=198;function tint(){var cs=document.querySelectorAll('canvas');var did=false;cs.forEach(function(c){try{var x=c.getContext('2d');var w=c.width,h=c.height;if(!w||!h)return;var im=x.getImageData(0,0,w,h);var d=im.data;var ch=false;for(var i=0;i<d.length;i+=4){var r=d[i],g=d[i+1],b=d[i+2];if(Math.abs(r-TR)<70&&Math.abs(g-TG)<70&&Math.abs(b-TC)<70&&g>r&&g>b){d[i]=BR;d[i+1]=BG;d[i+2]=BB;ch=true;}}if(ch){x.putImageData(im,0,0);did=true;}}catch(e){}});return did;}var n=0,t=setInterval(function(){tint();if(++n>50)clearInterval(t);},400);document.addEventListener('mousemove',function(){tint();},{passive:true});})();"
+  # NOTE: sub-page response-time charts are Chart.js <canvas> rendered teal by the
+  # theme. graphBorderColor/graphBackgroundColor are NOT passed through by Upptime,
+  # and the chart instance is sealed (not reachable/overridable via injected JS
+  # without racing the render loop). Recoloring them reliably needs a theme fork
+  # (customStatusWebsitePackage). Left at theme default for now.
