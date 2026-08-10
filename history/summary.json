@@ -77,18 +77,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/us.connect.fieldbots.com.ico",
     "slug": "field-bots-fleet-api-north-america",
     "status": "down",
-    "uptime": "8.14%",
-    "uptimeDay": "8.14%",
-    "uptimeWeek": "8.14%",
-    "uptimeMonth": "8.14%",
-    "uptimeYear": "8.14%",
+    "uptime": "5.09%",
+    "uptimeDay": "5.09%",
+    "uptimeWeek": "5.09%",
+    "uptimeMonth": "5.09%",
+    "uptimeYear": "5.09%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
     "timeMonth": 0,
     "timeYear": 0,
     "dailyMinutesDown": {
-      "2026-08-10": 4
+      "2026-08-10": 7
     }
   },
   {
