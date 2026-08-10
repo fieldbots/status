@@ -53,7 +53,7 @@ nav img, header nav img, .navbar img {
   width: auto;
 }
 
-/* 1. Remove the "FieldBots Status" text next to the logo (logo already says it) */
+/* Remove the "FieldBots Status" text next to the logo (logo already says it) */
 nav .logo div, nav a.logo div, header nav .logo div {
   display: none !important;
 }
@@ -65,8 +65,7 @@ button, .button, [role="button"] {
 }
 
 /* "Website" button in the nav — slim, vertically centered, with margin all round.
-   NOTE: template's default padding (24px 32px) is very specific, so we must use
-   !important to win. */
+   User-tuned values. Template's default padding is very specific, so use !important. */
 nav ul, header nav ul {
   margin: 0;
   align-items: center;
@@ -76,15 +75,13 @@ nav li, header nav li { margin: 0; display: flex; align-items: center; }
 nav a[href*="fieldbots.com"], header nav a[href*="fieldbots.com"] {
   background: var(--fb-blue);
   color: #ffffff !important;
-  padding: 0.3rem 0.85rem !important;
-  margin: 0.4rem 0.25rem 0.4rem 0.75rem !important;
+  padding: 0.3rem 0.8rem !important;
+  margin: 1rem 0 1rem 0 !important;
   border-radius: 6px;
   font-weight: 600;
-  font-size: 0.8rem;
-  line-height: 1.1;
-  display: inline-flex;
-  align-items: center;
-  height: auto;
+  font-size: 0.85rem;
+  line-height: 1;
+  display: inline-block;
   transition: background 0.15s ease;
 }
 nav a[href*="fieldbots.com"]:hover { background: #1e3f9e; color: #ffffff !important; }
@@ -92,36 +89,6 @@ nav a[href*="fieldbots.com"]:hover { background: #1e3f9e; color: #ffffff !import
 /* Cards / panels */
 .card, .panel, section, article {
   border-color: var(--fb-border);
-}
-
-/* Response-time graphs in FieldBots colors. Upptime renders them as a right-anchored
-   teal PNG injected inline via `--background: url(...response-time-week.png)`.
-   CSS cannot recolor a background PNG directly. So we:
-     1. keep the card its clean panel color (no teal flooding the card),
-     2. re-draw the SAME graph PNG on a ::after overlay in the right area,
-     3. hue-rotate that overlay from teal (~165deg) to FieldBots blue (~222deg).
-   Result: clean card, brand-blue sparkline. */
-article.graph, .card.graph, main article[class*="graph"] {
-  background-color: var(--card-background-color) !important; /* card stays clean */
-  background-image: none !important;                          /* hide teal original */
-  position: relative;
-  overflow: hidden;
-}
-article.graph::after, .card.graph::after, main article[class*="graph"]::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0.5rem;
-  transform: translateY(-50%);
-  width: 34%;
-  height: 62%;
-  background-image: var(--background);       /* the graph PNG */
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: contain;
-  /* teal -> FieldBots blue */
-  filter: hue-rotate(57deg) saturate(1.1) brightness(0.95);
-  pointer-events: none;
 }
 
 /* Status accents */

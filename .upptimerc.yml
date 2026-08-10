@@ -26,7 +26,7 @@ status-website:
   baseUrl: /status
   name: FieldBots Status
   logoUrl: https://fieldbots.github.io/status/fieldbots-logo.webp
-  favicon: https://fieldbots.github.io/status/fieldbots-logo.webp
+  favicon: https://fieldbots.github.io/status/favicon.png
   themeUrl: https://fieldbots.github.io/status/fieldbots-theme.css
   introTitle: "System Status"
   introMessage: Real-time availability of the FieldBots platform. Subscribe to incident updates below; technical details are tracked per incident.
