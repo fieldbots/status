@@ -11,10 +11,10 @@ sites:
     url: https://biggestfleet.com
   - name: FieldBots App
     url: https://apps.fieldbots.com
-  - name: FieldBots Fleet API (Europe)
+  - name: FieldBots Connect (Europe)
     url: https://connect.fieldbots.com
-  - name: FieldBots Fleet API (North America)
-    url: https://us.connect.fieldbots.com
+  - name: FieldBots Connect (North America)
+    url: https://connect.us.fieldbots.com
   - name: FieldBots Keycloak (Auth)
     url: https://auth.fieldbots.com/auth/realms/master
 
