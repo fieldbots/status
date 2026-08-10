@@ -33,6 +33,6 @@ status-website:
   navbar:
     - title: Website
       href: https://fieldbots.com
-  # Point the navbar logo at the public website too (it defaults to the status page).
-  # SPA renders client-side, so retry until the nav logo link exists.
-  js: "(function(){var set=function(){var l=document.querySelector('nav .logo')||document.querySelector('nav a');if(l){l.setAttribute('href','https://fieldbots.com');l.setAttribute('target','_self');return true;}return false;};if(!set()){var n=0,t=setInterval(function(){if(set()||++n>40)clearInterval(t);},250);}})();"
+  # Graph colors (CD): sub-page Chart.js line + fill in FieldBots blue.
+  graphBorderColor: "#2953c6"
+  graphBackgroundColor: "#dce6f7"
