@@ -20,14 +20,12 @@ sites:
 
 status-website:
   baseUrl: /status
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: FieldBots Status
+  logoUrl: https://fieldbots.github.io/status/fieldbots-logo.webp
+  favicon: https://fieldbots.github.io/status/fieldbots-logo.webp
+  themeUrl: https://fieldbots.github.io/status/fieldbots-theme.css
   introTitle: "**FieldBots** system status."
-  introMessage: Real-time availability of the FieldBots platform. Incidents are tracked in our [GitHub repository](https://github.com/fieldbots/status).
+  introMessage: Real-time availability of the FieldBots platform. Subscribe to incident updates below; technical details are tracked per incident.
   navbar:
-    - title: Status
-      href: /status/
-    - title: FieldBots
+    - title: Back to Website
       href: https://fieldbots.com
-    - title: GitHub
-      href: https://github.com/fieldbots/status

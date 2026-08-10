@@ -1,0 +1,81 @@
+/* FieldBots brand theme for Upptime status page.
+   Brand tokens sourced from fieldbots.com/assets/site.css.
+   Loaded via `themeUrl` (Upptime-supported override). */
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Rubik:wght@400;500;600&display=swap");
+
+:root {
+  /* FieldBots palette */
+  --fb-blue: #2953c6;
+  --fb-navy: #152a3f;
+  --fb-red: #e2001a;
+  --fb-grey: #6c757d;
+  --fb-panel: #f4f4f9;
+  --fb-border: #dedfe0;
+
+  /* Upptime theme variables (light, branded) */
+  --body-background-color: #ffffff;
+  --body-text-color: var(--fb-navy);
+  --card-background-color: var(--fb-panel);
+  --nav-background-color: #ffffff;
+  --nav-border-bottom-color: var(--fb-border);
+  --link-color: var(--fb-blue);
+  --border-color: var(--fb-border);
+}
+
+* {
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.intro h1, header h1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--fb-navy);
+}
+
+/* Navbar: light, like fieldbots.com — logo (red mark + navy wordmark) reads cleanly */
+nav, header nav, .navbar {
+  background-color: #ffffff !important;
+  color: var(--fb-navy);
+  border-bottom: 1px solid var(--fb-border);
+}
+nav a, header nav a, .navbar a, nav .brand, nav .logo {
+  color: var(--fb-navy) !important;
+  text-decoration: none;
+}
+nav a:hover { color: var(--fb-blue) !important; }
+
+/* Logo sizing (native colors — no filter, keep red mark + navy wordmark) */
+nav img, header nav img, .navbar img {
+  max-height: 30px;
+  width: auto;
+}
+
+/* Primary buttons / links in brand blue */
+a { color: var(--fb-blue); }
+button, .button, [role="button"] {
+  font-family: "Rubik", sans-serif;
+}
+
+/* "Back to Website" button in the nav */
+nav a[href*="fieldbots.com"], header nav a[href*="fieldbots.com"] {
+  background: var(--fb-blue);
+  color: #ffffff !important;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.15s ease;
+}
+nav a[href*="fieldbots.com"]:hover { background: #1e3f9e; color: #ffffff !important; }
+
+/* Cards / panels */
+.card, .panel, section, article {
+  border-color: var(--fb-border);
+}
+
+/* Status accents */
+.up, .operational, .status-up { color: #1a7f37; }
+.degraded { color: #b38600; }
+.down, .status-down { color: var(--fb-red); }
