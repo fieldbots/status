@@ -4,6 +4,9 @@
 owner: fieldbots
 repo: status
 
+# Keep past incident issues even if a monitor is renamed/removed (don't auto-delete).
+skipDeleteIssues: true
+
 # Sites are listed alphabetically.
 sites:
   - name: Biggest Fleet Website
@@ -30,3 +33,6 @@ status-website:
   navbar:
     - title: Website
       href: https://fieldbots.com
+  # Point the navbar logo at the public website too (it defaults to the status page).
+  # SPA renders client-side, so retry until the nav logo link exists.
+  js: "(function(){var set=function(){var l=document.querySelector('nav .logo')||document.querySelector('nav a');if(l){l.setAttribute('href','https://fieldbots.com');l.setAttribute('target','_self');return true;}return false;};if(!set()){var n=0,t=setInterval(function(){if(set()||++n>40)clearInterval(t);},250);}})();"

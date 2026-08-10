@@ -64,23 +64,27 @@ button, .button, [role="button"] {
   font-family: "Rubik", sans-serif;
 }
 
-/* "Website" button in the nav — proper margin + tighter padding */
+/* "Website" button in the nav — slim, vertically centered, with margin all round.
+   NOTE: template's default padding (24px 32px) is very specific, so we must use
+   !important to win. */
 nav ul, header nav ul {
   margin: 0;
   align-items: center;
   display: flex;
 }
-nav li, header nav li { margin: 0; }
+nav li, header nav li { margin: 0; display: flex; align-items: center; }
 nav a[href*="fieldbots.com"], header nav a[href*="fieldbots.com"] {
   background: var(--fb-blue);
   color: #ffffff !important;
-  padding: 0.3rem 0.8rem;
-  margin: 0 0 0 0.5rem;
+  padding: 0.3rem 0.85rem !important;
+  margin: 0.4rem 0.25rem 0.4rem 0.75rem !important;
   border-radius: 6px;
   font-weight: 600;
-  font-size: 0.85rem;
-  line-height: 1.2;
-  display: inline-block;
+  font-size: 0.8rem;
+  line-height: 1.1;
+  display: inline-flex;
+  align-items: center;
+  height: auto;
   transition: background 0.15s ease;
 }
 nav a[href*="fieldbots.com"]:hover { background: #1e3f9e; color: #ffffff !important; }
@@ -90,15 +94,17 @@ nav a[href*="fieldbots.com"]:hover { background: #1e3f9e; color: #ffffff !import
   border-color: var(--fb-border);
 }
 
-/* 5. Remove the off-brand per-card response-time graph. Upptime renders it as a
-   right-anchored teal background PNG, injected as an inline `background:
-   var(--background)` where --background = url(...response-time-week.png).
-   Neutralize the variable AND kill the background so the teal slab never shows.
-   Uptime % + response time are already shown as text, so no info is lost. */
+/* Response-time graphs in FieldBots colors. Upptime renders them as a
+   right-anchored teal PNG (inline `--background: url(...response-time-week.png)`).
+   CSS can't recolor a background PNG, so we blend it toward the brand navy/blue:
+   keep the image, but mute it and tint it so it reads as FieldBots, not teal. */
 article.graph, .card.graph, main article[class*="graph"] {
-  --background: none !important;
-  background-image: none !important;
-  background: var(--card-background-color) !important;
+  background-repeat: no-repeat !important;
+  background-position: right 0.5rem center !important;
+  background-size: auto 70% !important;
+  /* soften the loud teal into the card so it harmonizes with navy/blue */
+  background-blend-mode: luminosity;
+  background-color: #aebfdd !important; /* soft FieldBots blue tint */
 }
 
 /* Status accents */
