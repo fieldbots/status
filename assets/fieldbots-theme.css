@@ -53,19 +53,34 @@ nav img, header nav img, .navbar img {
   width: auto;
 }
 
+/* 1. Remove the "FieldBots Status" text next to the logo (logo already says it) */
+nav .logo div, nav a.logo div, header nav .logo div {
+  display: none !important;
+}
+
 /* Primary buttons / links in brand blue */
 a { color: var(--fb-blue); }
 button, .button, [role="button"] {
   font-family: "Rubik", sans-serif;
 }
 
-/* "Back to Website" button in the nav */
+/* "Website" button in the nav — proper margin + tighter padding */
+nav ul, header nav ul {
+  margin: 0;
+  align-items: center;
+  display: flex;
+}
+nav li, header nav li { margin: 0; }
 nav a[href*="fieldbots.com"], header nav a[href*="fieldbots.com"] {
   background: var(--fb-blue);
   color: #ffffff !important;
-  padding: 0.45rem 1rem;
-  border-radius: 8px;
+  padding: 0.3rem 0.8rem;
+  margin: 0 0 0 0.5rem;
+  border-radius: 6px;
   font-weight: 600;
+  font-size: 0.85rem;
+  line-height: 1.2;
+  display: inline-block;
   transition: background 0.15s ease;
 }
 nav a[href*="fieldbots.com"]:hover { background: #1e3f9e; color: #ffffff !important; }
@@ -73,6 +88,17 @@ nav a[href*="fieldbots.com"]:hover { background: #1e3f9e; color: #ffffff !import
 /* Cards / panels */
 .card, .panel, section, article {
   border-color: var(--fb-border);
+}
+
+/* 5. Remove the off-brand per-card response-time graph. Upptime renders it as a
+   right-anchored teal background PNG, injected as an inline `background:
+   var(--background)` where --background = url(...response-time-week.png).
+   Neutralize the variable AND kill the background so the teal slab never shows.
+   Uptime % + response time are already shown as text, so no info is lost. */
+article.graph, .card.graph, main article[class*="graph"] {
+  --background: none !important;
+  background-image: none !important;
+  background: var(--card-background-color) !important;
 }
 
 /* Status accents */

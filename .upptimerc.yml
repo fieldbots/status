@@ -4,9 +4,8 @@
 owner: fieldbots
 repo: status
 
+# Sites are listed alphabetically.
 sites:
-  - name: FieldBots Website
-    url: https://fieldbots.com
   - name: Biggest Fleet Website
     url: https://biggestfleet.com
   - name: FieldBots App
@@ -17,6 +16,8 @@ sites:
     url: https://connect.us.fieldbots.com
   - name: FieldBots Keycloak (Auth)
     url: https://auth.fieldbots.com/auth/realms/master
+  - name: FieldBots Website
+    url: https://fieldbots.com
 
 status-website:
   baseUrl: /status
@@ -24,8 +25,8 @@ status-website:
   logoUrl: https://fieldbots.github.io/status/fieldbots-logo.webp
   favicon: https://fieldbots.github.io/status/fieldbots-logo.webp
   themeUrl: https://fieldbots.github.io/status/fieldbots-theme.css
-  introTitle: "**FieldBots** system status."
+  introTitle: "System Status"
   introMessage: Real-time availability of the FieldBots platform. Subscribe to incident updates below; technical details are tracked per incident.
   navbar:
-    - title: Back to Website
+    - title: Website
       href: https://fieldbots.com
