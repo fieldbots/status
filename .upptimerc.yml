@@ -13,22 +13,10 @@ sites:
     url: https://apps.fieldbots.com
   - name: FieldBots Fleet API (Europe)
     url: https://connect.fieldbots.com
-    method: GET
-    expectedStatusCodes:
-      - 200
-      - 401
-      - 403
-      - 404
   - name: FieldBots Fleet API (North America)
     url: https://us.connect.fieldbots.com
-    method: GET
-    expectedStatusCodes:
-      - 200
-      - 401
-      - 403
-      - 404
   - name: FieldBots Keycloak (Auth)
-    url: https://auth.fieldbots.com
+    url: https://auth.fieldbots.com/auth/realms/master
 
 status-website:
   baseUrl: /status
