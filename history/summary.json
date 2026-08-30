@@ -4,12 +4,12 @@
     "url": "https://biggestfleet.com",
     "icon": "https://icons.duckduckgo.com/ip3/biggestfleet.com.ico",
     "slug": "biggest-fleet-website",
-    "status": "up",
-    "uptime": "99.74%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "99.87%",
-    "uptimeMonth": "99.74%",
-    "uptimeYear": "99.74%",
+    "status": "down",
+    "uptime": "99.72%",
+    "uptimeDay": "99.40%",
+    "uptimeWeek": "99.78%",
+    "uptimeMonth": "99.72%",
+    "uptimeYear": "99.72%",
     "time": 880,
     "timeDay": 746,
     "timeWeek": 866,
@@ -22,7 +22,8 @@
       "2026-08-16": 15,
       "2026-08-17": 8,
       "2026-08-18": 7,
-      "2026-08-23": 13
+      "2026-08-23": 13,
+      "2026-08-30": 9
     }
   },
   {
@@ -30,81 +31,89 @@
     "url": "https://apps.fieldbots.com",
     "icon": "https://icons.duckduckgo.com/ip3/apps.fieldbots.com.ico",
     "slug": "field-bots-app",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.98%",
+    "uptimeDay": "99.52%",
+    "uptimeWeek": "99.93%",
+    "uptimeMonth": "99.98%",
+    "uptimeYear": "99.98%",
     "time": 743,
     "timeDay": 693,
     "timeWeek": 737,
     "timeMonth": 743,
     "timeYear": 743,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-30": 7
+    }
   },
   {
     "name": "FieldBots Connect (Europe)",
     "url": "https://connect.fieldbots.com",
     "icon": "https://icons.duckduckgo.com/ip3/connect.fieldbots.com.ico",
     "slug": "field-bots-connect-europe",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.98%",
+    "uptimeDay": "99.64%",
+    "uptimeWeek": "99.95%",
+    "uptimeMonth": "99.98%",
+    "uptimeYear": "99.98%",
     "time": 519,
     "timeDay": 507,
     "timeWeek": 524,
     "timeMonth": 519,
     "timeYear": 519,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-30": 5
+    }
   },
   {
     "name": "FieldBots Connect (North America)",
     "url": "https://connect.us.fieldbots.com",
     "icon": "https://icons.duckduckgo.com/ip3/connect.us.fieldbots.com.ico",
     "slug": "field-bots-connect-north-america",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.99%",
+    "uptimeDay": "99.76%",
+    "uptimeWeek": "99.97%",
+    "uptimeMonth": "99.99%",
+    "uptimeYear": "99.99%",
     "time": 268,
     "timeDay": 193,
     "timeWeek": 289,
     "timeMonth": 268,
     "timeYear": 268,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-30": 4
+    }
   },
   {
     "name": "FieldBots Keycloak (Auth)",
     "url": "https://auth.fieldbots.com/auth/realms/master",
     "icon": "https://icons.duckduckgo.com/ip3/auth.fieldbots.com.ico",
     "slug": "field-bots-keycloak-auth",
-    "status": "up",
-    "uptime": "100.00%",
-    "uptimeDay": "100.00%",
-    "uptimeWeek": "100.00%",
-    "uptimeMonth": "100.00%",
-    "uptimeYear": "100.00%",
+    "status": "down",
+    "uptime": "99.99%",
+    "uptimeDay": "99.87%",
+    "uptimeWeek": "99.98%",
+    "uptimeMonth": "99.99%",
+    "uptimeYear": "99.99%",
     "time": 513,
     "timeDay": 509,
     "timeWeek": 531,
     "timeMonth": 513,
     "timeYear": 513,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-08-30": 2
+    }
   },
   {
     "name": "FieldBots Website",
     "url": "https://fieldbots.com",
     "icon": "https://icons.duckduckgo.com/ip3/fieldbots.com.ico",
     "slug": "field-bots-website",
-    "status": "up",
+    "status": "down",
     "uptime": "99.91%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "99.96%",
     "uptimeMonth": "99.91%",
     "uptimeYear": "99.91%",
@@ -120,7 +129,8 @@
       "2026-08-16": 2,
       "2026-08-17": 3,
       "2026-08-18": 2,
-      "2026-08-23": 4
+      "2026-08-23": 4,
+      "2026-08-30": 0
     }
   }
 ]
