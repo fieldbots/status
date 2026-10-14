@@ -11,16 +11,14 @@ skipDeleteIssues: true
 sites:
   - name: Biggest Fleet Website
     url: https://biggestfleet.com
-  - name: FieldBots App
-    url: https://apps.fieldbots.com
-  - name: FieldBots Connect (Europe)
-    url: https://connect.fieldbots.com
-  - name: FieldBots Connect (North America)
-    url: https://connect.us.fieldbots.com
-  - name: FieldBots Keycloak (Auth)
-    url: https://auth.fieldbots.com/auth/realms/master
+  - name: FieldBots Fleet Management
+    url: https://app.fieldbots.com
+  - name: FieldBots IAM
+    url: https://identity.fieldbots.com/auth/realms/master
   - name: FieldBots Website
     url: https://fieldbots.com
+  - name: Weltmodell
+    url: https://eu.rest.weltmodell.ai
 
 status-website:
   baseUrl: /status
