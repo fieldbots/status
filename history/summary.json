@@ -4,11 +4,11 @@
     "url": "https://biggestfleet.com",
     "icon": "https://icons.duckduckgo.com/ip3/biggestfleet.com.ico",
     "slug": "biggest-fleet-website",
-    "status": "up",
+    "status": "down",
     "uptime": "97.02%",
-    "uptimeDay": "99.61%",
-    "uptimeWeek": "98.81%",
-    "uptimeMonth": "99.41%",
+    "uptimeDay": "99.25%",
+    "uptimeWeek": "98.76%",
+    "uptimeMonth": "99.40%",
     "uptimeYear": "97.02%",
     "time": 1054,
     "timeDay": 968,
@@ -61,7 +61,8 @@
       "2026-11-21": 22,
       "2026-11-22": 34,
       "2026-11-23": 6,
-      "2026-11-24": 6
+      "2026-11-24": 6,
+      "2026-11-25": 5
     }
   },
   {
@@ -88,18 +89,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/identity.fieldbots.com.ico",
     "slug": "field-bots-iam",
     "status": "down",
-    "uptime": "21.42%",
+    "uptime": "21.41%",
     "uptimeDay": "0.00%",
     "uptimeWeek": "0.00%",
     "uptimeMonth": "0.00%",
-    "uptimeYear": "21.42%",
+    "uptimeYear": "21.41%",
     "time": 476,
     "timeDay": 578,
     "timeWeek": 505,
     "timeMonth": 466,
     "timeYear": 476,
     "dailyMinutesDown": {
-      "2026-11-25": 31,
+      "2026-11-25": 68,
       "2026-11-24": 1440,
       "2026-11-23": 1440,
       "2026-11-22": 1440,
@@ -140,9 +141,9 @@
     "url": "https://fieldbots.com",
     "icon": "https://icons.duckduckgo.com/ip3/fieldbots.com.ico",
     "slug": "field-bots-website",
-    "status": "up",
+    "status": "down",
     "uptime": "99.48%",
-    "uptimeDay": "99.94%",
+    "uptimeDay": "99.93%",
     "uptimeWeek": "99.67%",
     "uptimeMonth": "99.80%",
     "uptimeYear": "99.48%",
@@ -194,7 +195,8 @@
       "2026-11-21": 4,
       "2026-11-22": 15,
       "2026-11-23": 1,
-      "2026-11-24": 1
+      "2026-11-24": 1,
+      "2026-11-25": 0
     }
   },
   {
